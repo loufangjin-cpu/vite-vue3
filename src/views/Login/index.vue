@@ -1,11 +1,14 @@
 <template>
-  <div>1</div>
-  <div>3</div>
-  <div>2</div>
+  <h1>登录页</h1>
+  vuex:{{ $store.state.num }}
+  <div>
+    <van-button type="primary" @click="goLogin">跳转到首页</van-button>
+  </div>
 </template>
-<script lang='ts' setup='props'>
-
+<script lang="ts" setup="props">
+import { useRouter } from "vue-router";
+const router = useRouter();
+const goLogin = () => {
+  router.push("/");
+};
 </script>
-<style scoped>
-
-</style>

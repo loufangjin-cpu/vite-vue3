@@ -1,32 +1,10 @@
 <template>
   <h1>{{ msg }}</h1>
-
-  <p>
-    Recommended IDE setup:
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
-    +
-    <a
-      href="https://marketplace.visualstudio.com/items?itemName=octref.vetur"
-      target="_blank"
-    >Vetur</a>
-    or
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-    (if using
-    <code>&ltscript setup&gt;</code>)
-  </p>
-
-  <p>See <code>README.md</code> for more information.</p>
-
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite Docs</a> |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
-  </p>
-
-  <button @click="count++">count is: {{ count }}</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <h1>你好</h1>
+  <img src="../assets/logo.png" alt="" />
+  <div class="test">
+    <span>嵌套css</span>
+  </div>
 </template>
 
 <script lang="ts">
@@ -41,16 +19,17 @@ export default defineComponent({
   },
   setup: () => {
     const count = ref(0)
-    return { count }
+    const useScriptSetup = ref(false)
+    const useTsPlugin = ref(false)
+    return { count, useScriptSetup, useTsPlugin }
   }
 })
 </script>
 
-<style scoped>
+<style scoped lang='less'>
 a {
   color: #42b983;
 }
-
 label {
   margin: 0 0.5em;
   font-weight: bold;
@@ -61,5 +40,10 @@ code {
   padding: 2px 4px;
   border-radius: 4px;
   color: #304455;
+}
+.test {
+}
+span {
+  background-color: pink;
 }
 </style>

@@ -9,6 +9,7 @@ export default createStore({
         state.listData=value
     },
     addNum(state){
+      console.log('state', state);
       state.num=state.num+10
     }
   },
