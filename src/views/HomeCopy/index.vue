@@ -1,6 +1,6 @@
 <template>
   <h1 class="text">我是首页</h1>
-  vuex:{{ $store.state.moduleA.num }}
+  vuex:{{ $store.state.num }}
   <div>computed: {{state.wordCOunt}}</div>
   <button @click="add">++</button>
   {{ state.name }}
@@ -32,18 +32,17 @@ const state = reactive({
     store.state.moduleA.num
   }),
   color: computed(() => {
-    return store.state.moduleA.num > 20 ? (state.color = 'red') : (state.color = '#ccc')
+    return store.state.moduleA.num > 20 ? (state.color = 'pink') : (state.color = '#ccc')
   }),
   show: false,
-  wordCOunt: 0,
-  list: computed(() => store.state.moduleA.listInfo)
+  wordCOunt: computed(() => `${state.name}-${state.num}`),
+  list: computed(() => store.state.listInfo)
 })
 const goLogin = () => {
-  // this.$router.push('/group/team?fromsrc=pk')
-  router.push('/login/team?fromsrc=pk')
+  router.push('/login')
 }
 const add = () => {
-  state.wordCOunt += 10
+  console.log('store', store);
   store.commit('moduleA/addNum')
 }
 // const show = ref(false)
@@ -66,7 +65,7 @@ onUnmounted(() => {
   console.log('onUnmounted')
 })
 const ajaxInfo = () => {
-  store.dispatch('moduleA/fetchInfo', article)
+  store.dispatch('fetchInfo', article)
 }
 
 

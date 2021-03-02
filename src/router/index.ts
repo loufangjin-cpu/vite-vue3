@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
+import { createRouter, createWebHashHistory, createWebHistory, RouteRecordRaw } from "vue-router";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -10,7 +10,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/Home/index.vue"),
   },
   {
-    path: "/login",
+    path: "/login/:id",
     name: "Login",
     meta: {
       title: "登录",
@@ -18,9 +18,22 @@ const routes: Array<RouteRecordRaw> = [
     },
     component: () => import("@/views/Login/index.vue"),
   },
+  {
+    path: "/homeCopy",
+    name: "HomeCopy",
+    meta: {
+      title: "登录2",
+      keepAlive: true
+    },
+    component: () => import("@/views/HomeCopy/index.vue"),
+  },
+  { path: '/:pathMatch(.*)*',
+    component: () => import("@/views/NoFound/index.vue")
+  }
 ];
 const router = createRouter({
-  history: createWebHashHistory(),
+  // history: createWebHashHistory(),
+  history: createWebHistory(), // 生产环境nginx配置
   routes
 });
 export default router;
