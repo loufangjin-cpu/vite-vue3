@@ -10,21 +10,29 @@
   </div>
   <van-cell is-link @click="showPopup">展示弹出层</van-cell>
   <van-popup v-model:show="state.show">内容</van-popup>
+  <div
+    class="list-box"
+    v-for="item in state.list"
+    :key='item.index'>
+    {{item.name}}
+  </div>
 </template>
 <script lang="ts" setup="props">
 import { computed, reactive, ref, onMounted, onUnmounted, watchEffect, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useStore } from 'vuex'
-// import { article } from "@/api/index";
+import { article } from "@/api/index";
 
 const router = useRouter()
 const store = useStore()
+
 const state = reactive({
   name: '霍庆祝',
   num: 10,
   color: '#ccc',
   show: false,
-  wordCOunt: computed(() => `${state.name}-${state.num}`)
+  wordCOunt: computed(() => `${state.name}-${state.num}`),
+  list: computed(() => store.state.listInfo)
 })
 const goLogin = () => {
   router.push('/login')
@@ -37,6 +45,7 @@ const add = () => {
 // const show = ref(false)
 const showPopup = () => {
   state.show = true
+  ajaxInfo()
 }
 // 监听
  watchEffect(() => {
@@ -47,13 +56,15 @@ watch(() => state.num, val => {
 })
 onMounted(() => {
   console.log('onMounted')
+  // ajaxInfo()
 })
 onUnmounted(() => {
   console.log('onUnmounted')
 })
-// article().then((res: any) => {
-//   console.log(res);
-// });
+const ajaxInfo = () => {
+  store.dispatch('fetchInfo', article)
+}
+
 
 
 </script>

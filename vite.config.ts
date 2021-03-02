@@ -16,7 +16,12 @@ export default defineConfig({
     open: true,
     proxy: {
       // 选项写法
-      '/api': 'http://123.56.85.24:5000'//代理网址
+      // target: 'http://jsonplaceholder.typicode.com/',//代理网址
+      '/api': {
+        target: 'http://jsonplaceholder.typicode.com/',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      }
     },
     cors:true
   }

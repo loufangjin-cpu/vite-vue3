@@ -355,6 +355,11 @@ less@^4.1.1:
     needle "^2.5.2"
     source-map "~0.6.0"
 
+lib-flexible@^0.3.2:
+  version "0.3.2"
+  resolved "https://npm.pri.ibanyu.com/lib-flexible/-/lib-flexible-0.3.2.tgz#06f5a74832314a2d35c12039bc9c3ca2daeaa426"
+  integrity sha1-BvWnSDIxSi01wSA5vJw8otrqpCY=
+
 loader-utils@^1.1.0:
   version "1.4.0"
   resolved "https://npm.pri.ibanyu.com/loader-utils/-/loader-utils-1.4.0.tgz#c579b5e34cb34b1a74edc6c1fb36bfa371d5a613"

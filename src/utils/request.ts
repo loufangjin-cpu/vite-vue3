@@ -1,7 +1,14 @@
 import axios from "axios";
 const service = axios.create({
-  baseURL,
-  timeout: 5000 // request timeout
+  // baseURL,
+  timeout: 5000, // request timeout
+  responseType: "json",
+  headers: {
+    Accept: "application/json",
+    "Content-Type": "application/json",
+    Authorization:
+      "Bearer eyJrIjoiZ1BkdjFuVWhpVFJYVDFnNlI4aWVkNjloM3hGSDRUbXkiLCJuIjoidGVzdCIsImlkIjoxfQ=="
+  }
 });
 // 发起请求之前的拦截器
 service.interceptors.request.use(
