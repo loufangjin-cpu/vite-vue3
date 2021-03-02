@@ -18,7 +18,7 @@
   </div>
 </template>
 <script lang="ts" setup="props">
-import { computed, reactive, ref, onMounted, onUnmounted, watchEffect, watch } from 'vue'
+import { computed, reactive, ref, onMounted, onUnmounted, onUpdated, watchEffect, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useStore} from 'vuex'
 import { article } from "@/api/index";
@@ -67,9 +67,6 @@ onUnmounted(() => {
 const ajaxInfo = () => {
   store.dispatch('fetchInfo', article)
 }
-
-
-
 </script>
 <style scoped>
 .text {

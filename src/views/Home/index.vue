@@ -16,16 +16,16 @@
     :key='item.index'>
     {{item.name}}
   </div>
+  <hello-world :msg='state.name' />
 </template>
 <script lang="ts" setup="props">
 import { computed, reactive, ref, onMounted, onUnmounted, watchEffect, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useStore} from 'vuex'
 import { article } from "@/api/index";
-
+import HelloWorld from '../../components/HelloWorld.vue';
 const router = useRouter()
 const store = useStore()
-
 const state = reactive({
   name: '霍庆祝',
   num: computed(() => {
