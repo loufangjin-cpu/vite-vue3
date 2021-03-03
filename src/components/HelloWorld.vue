@@ -7,8 +7,8 @@
   </div>
 </template>
 
-<script lang="ts" setup="props, {emit}">
-import { computed, reactive, ref, onMounted, onUnmounted, onUpdated, watchEffect, watch, inject, provide, Prop } from 'vue'
+<script lang="ts">
+import { computed, reactive, toRef, ref, onMounted, onUnmounted, onUpdated, watchEffect, watch, inject, provide, useContext } from 'vue'
 // export default defineComponent({
 //   name: 'HelloWorld',
 //   props: {

@@ -16,14 +16,16 @@
     :key='item.index'>
     {{item.name}}
   </div>
-  <hello-world :msg='state.name' />
+  <hello-world msg='hhhhh' />
+  <hello-world-1 @changeValue="changeValue" msg='daada' />
 </template>
 <script lang="ts" setup="props">
-import { computed, reactive, ref, onMounted, onUnmounted, watchEffect, watch } from 'vue'
+import { computed, reactive, ref, onMounted, onUnmounted, watchEffect, watch, provide } from 'vue'
 import { useRouter } from 'vue-router'
 import { useStore} from 'vuex'
 import { article } from "@/api/index";
 import HelloWorld from '../../components/HelloWorld.vue';
+import HelloWorld1 from '../../components/HelloWorld1.vue';
 const router = useRouter()
 const store = useStore()
 const state = reactive({
@@ -38,18 +40,25 @@ const state = reactive({
   wordCOunt: 0,
   list: computed(() => store.state.moduleA.listInfo)
 })
+provide('geolocation', state)
 const goLogin = () => {
   // this.$router.push('/group/team?fromsrc=pk')
   router.push('/login/team?fromsrc=pk')
 }
 const add = () => {
-  state.wordCOunt += 10
+  setTimeout(() => {
+    state.wordCOunt += 10
+  },100)
   store.commit('moduleA/addNum')
 }
 // const show = ref(false)
 const showPopup = () => {
   state.show = true
   ajaxInfo()
+}
+const changeValue = (value) => {
+  console.log('value', value);
+  
 }
 // 监听
  watchEffect(() => {
