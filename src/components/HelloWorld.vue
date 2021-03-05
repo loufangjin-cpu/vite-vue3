@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup="props, { emite }">
 import { computed, reactive, toRef, ref, onMounted, onUnmounted, onUpdated, watchEffect, watch, inject, provide, useContext } from 'vue'
 // export default defineComponent({
 //   name: 'HelloWorld',

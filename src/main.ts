@@ -6,6 +6,17 @@ import ant from './utils/ant';
 import 'lib-flexible/flexible'
 import 'vant/lib/index.css'; // 全局引入样式
 import "./utils/rem"
+import * as Sentry from "@sentry/vue";
+import { Integrations } from "@sentry/tracing";
+
+Sentry.init({
+  dsn: "https://80ce8de4297b4e95a1dac7bbeef50f5c@o541977.ingest.sentry.io/5660965",
+  integrations: [new Integrations.BrowserTracing()],
+
+  // We recommend adjusting this value in production, or using tracesSampler
+  // for finer control
+  tracesSampleRate: 1.0,
+});
 createApp(App)
 .use(router)
 .use(store)

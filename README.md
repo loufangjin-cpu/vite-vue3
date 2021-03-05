@@ -9,3 +9,6 @@ vite2.0+vue3移动端项目实战: https://mp.weixin.qq.com/s/DcBOiOhXv5OhxAaxC5
 vite 和 webpack 差异: https://blog.csdn.net/petertanjinjie/article/details/114109512?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-2&spm=1001.2101.3001.4242
 
 props使用: https://www.yisu.com/zixun/376039.html
+
+京东vite: https://juejin.cn/post/6935231099102560293
+vite 和webpack: https://blog.csdn.net/qq_41499782/article/details/109593388

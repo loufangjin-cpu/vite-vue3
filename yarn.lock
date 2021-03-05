@@ -33,6 +33,81 @@
   resolved "https://npm.pri.ibanyu.com/@popperjs%2fcore/-/core-2.8.6.tgz#ad75ebe8dbecfa145af3c7e4d0ae98016458d005"
   integrity sha1-rXXr6Nvs+hRa88fk0K6YAWRY0AU=
 
+"@sentry/browser@6.2.1":
+  version "6.2.1"
+  resolved "https://npm.pri.ibanyu.com/@sentry%2fbrowser/-/browser-6.2.1.tgz#f9f277e6f8cad0c7efd1a01726095d63a47a1c16"
+  integrity sha1-+fJ35vjK0Mfv0aAXJgldY6R6HBY=
+  dependencies:
+    "@sentry/core" "6.2.1"
+    "@sentry/types" "6.2.1"
+    "@sentry/utils" "6.2.1"
+    tslib "^1.9.3"
+
+"@sentry/core@6.2.1":
+  version "6.2.1"
+  resolved "https://npm.pri.ibanyu.com/@sentry%2fcore/-/core-6.2.1.tgz#8b177e9bf591e2e7ddcb04f0b1403de3f5aa8755"
+  integrity sha1-ixd+m/WR4ufdywTwsUA94/Wqh1U=
+  dependencies:
+    "@sentry/hub" "6.2.1"
+    "@sentry/minimal" "6.2.1"
+    "@sentry/types" "6.2.1"
+    "@sentry/utils" "6.2.1"
+    tslib "^1.9.3"
+
+"@sentry/hub@6.2.1":
+  version "6.2.1"
+  resolved "https://npm.pri.ibanyu.com/@sentry%2fhub/-/hub-6.2.1.tgz#35bc6bf841a93f4354b3a17592c938b3dba20b73"
+  integrity sha1-Nbxr+EGpP0NUs6F1ksk4s9uiC3M=
+  dependencies:
+    "@sentry/types" "6.2.1"
+    "@sentry/utils" "6.2.1"
+    tslib "^1.9.3"
+
+"@sentry/minimal@6.2.1":
+  version "6.2.1"
+  resolved "https://npm.pri.ibanyu.com/@sentry%2fminimal/-/minimal-6.2.1.tgz#8f01480e1b56bc7dd54adf925e5317f233e19384"
+  integrity sha1-jwFIDhtWvH3VSt+SXlMX8jPhk4Q=
+  dependencies:
+    "@sentry/hub" "6.2.1"
+    "@sentry/types" "6.2.1"
+    tslib "^1.9.3"
+
+"@sentry/tracing@^6.2.1":
+  version "6.2.1"
+  resolved "https://npm.pri.ibanyu.com/@sentry%2ftracing/-/tracing-6.2.1.tgz#61c18c43c5390c348b35dafe73947ab379252d8f"
+  integrity sha1-YcGMQ8U5DDSLNdr+c5R6s3klLY8=
+  dependencies:
+    "@sentry/hub" "6.2.1"
+    "@sentry/minimal" "6.2.1"
+    "@sentry/types" "6.2.1"
+    "@sentry/utils" "6.2.1"
+    tslib "^1.9.3"
+
+"@sentry/types@6.2.1":
+  version "6.2.1"
+  resolved "https://npm.pri.ibanyu.com/@sentry%2ftypes/-/types-6.2.1.tgz#28c946230b2023f72307b65606d32052ad9e5353"
+  integrity sha1-KMlGIwsgI/cjB7ZWBtMgUq2eU1M=
+
+"@sentry/utils@6.2.1":
+  version "6.2.1"
+  resolved "https://npm.pri.ibanyu.com/@sentry%2futils/-/utils-6.2.1.tgz#bfcb12c20d44bf2aeb0073b1264703c11c179ebd"
+  integrity sha1-v8sSwg1EvyrrAHOxJkcDwRwXnr0=
+  dependencies:
+    "@sentry/types" "6.2.1"
+    tslib "^1.9.3"
+
+"@sentry/vue@^6.2.1":
+  version "6.2.1"
+  resolved "https://npm.pri.ibanyu.com/@sentry%2fvue/-/vue-6.2.1.tgz#ba188a176fd607036016006f80b71d3a37c18fba"
+  integrity sha1-uhiKF2/WBwNgFgBvgLcdOjfBj7o=
+  dependencies:
+    "@sentry/browser" "6.2.1"
+    "@sentry/core" "6.2.1"
+    "@sentry/minimal" "6.2.1"
+    "@sentry/types" "6.2.1"
+    "@sentry/utils" "6.2.1"
+    tslib "^1.9.3"
+
 "@vant/icons@^1.5.3":
   version "1.5.3"
   resolved "https://npm.pri.ibanyu.com/@vant%2ficons/-/icons-1.5.3.tgz#b7779f67bf608d417a82452fbede406dfa46b439"
@@ -608,7 +683,7 @@ to-fast-properties@^2.0.0:
   resolved "https://npm.pri.ibanyu.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
   integrity sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
 
-tslib@^1.10.0:
+tslib@^1.10.0, tslib@^1.9.3:
   version "1.14.1"
   resolved "https://npm.pri.ibanyu.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
