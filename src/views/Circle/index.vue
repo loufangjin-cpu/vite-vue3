@@ -55,7 +55,7 @@ const circleProgress = (value) => {
   // 画外部圆空白
   context.beginPath();
   // 将起始点移到canvas中心
-  context.moveTo(c_width/2, c_height/2);
+  // context.moveTo(c_width/2, c_height/2);
   // 绘制一个中心点为（c_width/2, c_height/2），半径为c_height/2，起始点0，终止点为Math.PI * 2的 整圆
   context.arc(c_width/2, c_height/2, c_height/2, 0, Math.PI * 2, false);
   context.closePath();
@@ -64,7 +64,7 @@ const circleProgress = (value) => {
 
   // 画内部圆空白
   context.beginPath();
-  context.moveTo(c_width/2, c_height/2);
+  // context.moveTo(c_width/2, c_height/2);
   context.arc(c_width/2, c_height/2, c_height/2-10, 0, Math.PI * 2, true);
   context.closePath();
   context.fillStyle = 'rgba(255,255,255,1)';  // 填充内部颜色
@@ -77,13 +77,15 @@ const circleProgress = (value) => {
    * lineCap:
    */
 
-  // 画内圆
+  // 画内圆进度
   context.beginPath();
   context.strokeStyle = color;
   context.lineCap = 'square';
   context.lineWidth = 10.0;//绘制内圆的线宽度
+  // context.moveTo(c_width/2, c_height/2);
+
   // // 绘制一个中心点为（c_width/2, c_height/2），半径为c_height/2-5不与外圆重叠，
-  // // 起始点-(Math.PI/2)，终止点为((Math.PI*2)*cur)-Math.PI/2的 整圆cur为每一次绘制的距离
+  // // 起始点-(Math.PI/2)，终止点为((Math.PI*2)*cur)-Math.PI/2的 整圆value为每一次绘制的距离
   context.arc(c_width/2, c_height/2, c_height/2-5, -(Math.PI / 2), ((Math.PI * 2) * value) - Math.PI / 2, false);
   context.stroke();
 
