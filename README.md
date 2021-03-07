@@ -12,3 +12,5 @@ props使用: https://www.yisu.com/zixun/376039.html
 
 京东vite: https://juejin.cn/post/6935231099102560293
 vite 和webpack: https://blog.csdn.net/qq_41499782/article/details/109593388
+
+canvas 库： https://github.com/catdad/canvas-confetti

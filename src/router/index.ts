@@ -2,6 +2,15 @@ import { createRouter, createWebHashHistory, createWebHistory, RouteRecordRaw } 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
+    name: "Circle",
+    meta: {
+      title: "环形设计",
+      keepAlive: true
+    },
+    component: () => import("@/views/Circle/index.vue"),
+  },
+  {
+    path: "/home",
     name: "Home",
     meta: {
       title: "首页",

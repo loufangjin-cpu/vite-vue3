@@ -30,7 +30,7 @@ import {
 import { useRouter } from 'vue-router'
 import { useStore } from 'vuex'
 import { article } from '@/api/index'
-import HelloWorld from '../../components/HelloWorld.vue'
+// import HelloWorld from '../../components/HelloWorld.vue'
 import HelloWorld1 from '../../components/HelloWorld1.vue'
 const router = useRouter()
 const store = useStore()
