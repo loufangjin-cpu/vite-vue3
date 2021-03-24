@@ -10,6 +10,15 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/Circle/index.vue"),
   },
   {
+    path: "/snow",
+    name: "Snow",
+    meta: {
+      title: "雪花飘飘",
+      keepAlive: true
+    },
+    component: () => import("@/views/Snow/index.vue"),
+  },
+  {
     path: "/home",
     name: "Home",
     meta: {

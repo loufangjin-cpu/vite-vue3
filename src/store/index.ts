@@ -50,6 +50,7 @@ const moduleB = {
     async fetchInfo(params, ajax) {
       // console.log('params', params, ajax);
       const data = await ajax()
+      console.log('data', data)
       params.commit('setData', data)
     }
   },

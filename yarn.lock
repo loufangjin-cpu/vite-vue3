@@ -239,6 +239,11 @@ bluebird@^3.7.2:
   resolved "https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
 
+canvas-confetti@^1.4.0:
+  version "1.4.0"
+  resolved "https://npm.pri.ibanyu.com/canvas-confetti/-/canvas-confetti-1.4.0.tgz#840f6db4a566f8f32abe28c00dcd82acf39c92bd"
+  integrity sha1-hA9ttKVm+PMqvijADc2CrPOckr0=
+
 chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.npmjs.org/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
@@ -512,6 +517,11 @@ needle@^2.5.2:
     iconv-lite "^0.4.4"
     sax "^1.2.4"
 
+omicron@~0.2.0:
+  version "0.2.0"
+  resolved "https://npm.pri.ibanyu.com/omicron/-/omicron-0.2.0.tgz#5a275c33197c372ae3d96f9369bea1d55d20b175"
+  integrity sha1-WidcMxl8Nyrj2W+Tab6h1V0gsXU=
+
 parse-node-version@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/parse-node-version/-/parse-node-version-1.0.1.tgz#e2b5dbede00e7fa9bc363607f53327e8b073189b"
@@ -658,6 +668,13 @@ sourcemap-codec@^1.4.4:
   version "1.4.8"
   resolved "https://registry.npmjs.org/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
+
+state@^0.2.0:
+  version "0.2.0"
+  resolved "https://npm.pri.ibanyu.com/state/-/state-0.2.0.tgz#df661bdacaafffedd6e0288c87d83e3792d053cd"
+  integrity sha1-32Yb2sqv/+3W4CiMh9g+N5LQU80=
+  dependencies:
+    omicron "~0.2.0"
 
 string-hash@^1.1.1:
   version "1.1.3"

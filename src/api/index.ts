@@ -3,7 +3,7 @@ import request from "../utils/request";
 // 文章列表
 export function article() {
   return request({
-    url: "/api/users",
+    url: "/users",
     method: "get"
   });
 }

@@ -17,10 +17,10 @@ export default defineConfig({
     proxy: {
       // 选项写法
       // target: 'http://jsonplaceholder.typicode.com/',//代理网址
-      '/api': {
+      '/users': {
         target: 'http://jsonplaceholder.typicode.com/',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
+        // rewrite: (path) => path.replace(/^\/api/, ''),
       }
     },
     cors:true

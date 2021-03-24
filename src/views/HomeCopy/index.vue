@@ -65,7 +65,7 @@ onUnmounted(() => {
   console.log('onUnmounted')
 })
 const ajaxInfo = () => {
-  store.dispatch('fetchInfo', article)
+  store.dispatch('moduleB/fetchInfo', article)
 }
 </script>
 <style scoped>
