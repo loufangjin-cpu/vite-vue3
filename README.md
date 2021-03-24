@@ -14,3 +14,5 @@ props使用: https://www.yisu.com/zixun/376039.html
 vite 和webpack: https://blog.csdn.net/qq_41499782/article/details/109593388
 
 canvas 库： https://github.com/catdad/canvas-confetti
+
+## 雪花飘落、 五彩纸屑（blog项目）
