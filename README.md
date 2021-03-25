@@ -16,3 +16,7 @@ vite 和webpack: https://blog.csdn.net/qq_41499782/article/details/109593388
 canvas 库： https://github.com/catdad/canvas-confetti
 
 ## 雪花飘落、 五彩纸屑（blog项目）
+
+直播点赞动画两种方式实现动效： https://github.com/antiter/praise-animation
+
+直播点赞 https://juejin.cn/post/6844904126476730375
