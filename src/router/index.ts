@@ -19,6 +19,15 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/Snow/index.vue"),
   },
   {
+    path: "/flying-snow",
+    name: "FlyingSnow",
+    meta: {
+      title: "飞雪",
+      keepAlive: true
+    },
+    component: () => import("@/views/flying-snow/index.vue"),
+  },
+  {
     path: "/home",
     name: "Home",
     meta: {

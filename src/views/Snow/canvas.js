@@ -69,7 +69,6 @@ class ThumbsUpAni {
   createRender() {
     if (this.imgsList.length == 0) return null
     const basicScale = [0.6, 0.9, 1.2][getRandom(0, 2)]
-
     const getScale = (diffTime) => {
       if (diffTime < this.scaleTime) {
         return +(diffTime / this.scaleTime).toFixed(2) * basicScale
@@ -113,14 +112,14 @@ class ThumbsUpAni {
       // 差值满了，即结束了 0 ---》 1
       if (diffTime >= 1) return true
       context.save()
-      const scale = getScale(diffTime)
-      // const rotate = getRotate();
-      const translateX = getTranslateX(diffTime)
-      const translateY = getTranslateY(diffTime)
-      context.translate(translateX, translateY)
-      context.scale(scale, scale)
-      // context.rotate(rotate * Math.PI / 180);
-      context.globalAlpha = getAlpha(diffTime)
+          const scale = getScale(diffTime)
+        //       //   const rotate = getRotate();
+          const translateX = getTranslateX(diffTime)
+          const translateY = getTranslateY(diffTime)
+          context.translate(translateX, translateY)
+          context.scale(scale, scale)
+        //       //   context.rotate(rotate * Math.PI / 180);
+          context.globalAlpha = getAlpha(diffTime)
       context.drawImage(
         image,
         -image.width / 2,
@@ -128,6 +127,7 @@ class ThumbsUpAni {
         image.width,
         image.height
       )
+
       context.restore()
     }
   }
@@ -161,6 +161,7 @@ class ThumbsUpAni {
   }
   start() {
     const render = this.createRender()
+    console.log('render', render)
     const duration = getRandom(1500, 3000)
     this.renderList.push({
       render,

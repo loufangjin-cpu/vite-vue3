@@ -1,12 +1,9 @@
 <template>
 <div ref="refC">
-  <div @click="habdleClck">炸裂</div>
+  <div @click="handleCliskBroadcast">直播点赞动销</div>
   <canvas ref="canvas" id="canvans"></canvas>
-  <div class="hearts">
-    <!-- <span @click="bubble">heart</span> -->
-  </div>
-  <div class="praise_bubble" id="praise_bubble"></div>
   <canvas id="thumsCanvas" width="200" height="400" style="width:100px;height:200px"></canvas>
+
 </div>
 </template>
 <script>
@@ -18,19 +15,7 @@ import confetti from 'canvas-confetti'
 // confetti.Promise = MyPromise;
 // import { BubbleHearts } from './hearts'
 import {ThumbsUpAni} from './canvas'
-import img1 from './images/snow1.png'
-import img2 from './images/snow2.png'
-import img3 from './images/snow3.png'
-import img4 from './images/snow4.png'
-import img5 from './images/snow5.png'
-import img6 from './images/snow6.png'
-import img7 from './images/snow7.png'
-import img8 from './images/snow8.png'
-import img9 from './images/snow9.png'
-import img10 from './images/snow10.png'
 
-import heart from './images/heart.png'
-const assets = [heart]
 export default defineComponent({
   name: 'Snow',
   data() {
@@ -40,6 +25,7 @@ export default defineComponent({
       images: '',
       stage: '',
       thumbsUpAni: '',
+      parabola: ''
     }
   },
   created() {
@@ -65,9 +51,9 @@ export default defineComponent({
       
     // })
     this.thumbsUpAni = new ThumbsUpAni()
-    setInterval(()=>{
-        this.thumbsUpAni.start();
-    },300);
+    // setInterval(()=>{
+    //     this.thumbsUpAni.start();
+    // },300);
   },
   methods: {
     addPraise() {
@@ -101,7 +87,7 @@ export default defineComponent({
     randomInRange(min, max) {
       return Math.random() * (max - min) + min;
     },
-    habdleClck() {
+    handleCliskBroadcast() {
       // this.addPraise()
       // var canvas = this.$refs.canvas
       // this.$refs.refC.appendChild(myCanvas);
@@ -117,6 +103,8 @@ export default defineComponent({
       //   spread: 10,
       // });
       this.thumbsUpAni.start();
+    },
+    handleParabola() {
     }
   },
   setup() {
