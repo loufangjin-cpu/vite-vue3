@@ -301,6 +301,11 @@ debug@^3.2.6:
   dependencies:
     ms "^2.1.1"
 
+decode-uri-component@^0.2.0:
+  version "0.2.0"
+  resolved "https://npm.pri.ibanyu.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
+  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+
 emojis-list@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/emojis-list/-/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"
@@ -327,6 +332,11 @@ estree-walker@^2.0.1:
   version "2.0.2"
   resolved "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
   integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
+
+filter-obj@^1.1.0:
+  version "1.1.0"
+  resolved "https://npm.pri.ibanyu.com/filter-obj/-/filter-obj-1.1.0.tgz#9b311112bc6c6127a16e016c6c5d7f19e0805c5b"
+  integrity sha1-mzERErxsYSehbgFsbF1/GeCAXFs=
 
 follow-redirects@^1.10.0:
   version "1.13.3"
@@ -624,6 +634,16 @@ prr@~1.0.1:
   resolved "https://registry.npmjs.org/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
   integrity sha1-0/wRS6BplaRexok/SEzrHXj19HY=
 
+query-string@^7.0.0:
+  version "7.0.0"
+  resolved "https://npm.pri.ibanyu.com/query-string/-/query-string-7.0.0.tgz#aaad2c8d5c6a6d0c6afada877fecbd56af79e609"
+  integrity sha1-qq0sjVxqbQxq+tqHf+y9Vq955gk=
+  dependencies:
+    decode-uri-component "^0.2.0"
+    filter-obj "^1.1.0"
+    split-on-first "^1.0.0"
+    strict-uri-encode "^2.0.0"
+
 regenerator-runtime@^0.13.4:
   version "0.13.7"
   resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
@@ -669,12 +689,22 @@ sourcemap-codec@^1.4.4:
   resolved "https://registry.npmjs.org/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
 
+split-on-first@^1.0.0:
+  version "1.1.0"
+  resolved "https://npm.pri.ibanyu.com/split-on-first/-/split-on-first-1.1.0.tgz#f610afeee3b12bce1d0c30425e76398b78249a5f"
+  integrity sha1-9hCv7uOxK84dDDBCXnY5i3gkml8=
+
 state@^0.2.0:
   version "0.2.0"
   resolved "https://npm.pri.ibanyu.com/state/-/state-0.2.0.tgz#df661bdacaafffedd6e0288c87d83e3792d053cd"
   integrity sha1-32Yb2sqv/+3W4CiMh9g+N5LQU80=
   dependencies:
     omicron "~0.2.0"
+
+strict-uri-encode@^2.0.0:
+  version "2.0.0"
+  resolved "https://npm.pri.ibanyu.com/strict-uri-encode/-/strict-uri-encode-2.0.0.tgz#b9c7330c7042862f6b142dc274bbcc5866ce3546"
+  integrity sha1-ucczDHBChi9rFC3CdLvMWGbONUY=
 
 string-hash@^1.1.1:
   version "1.1.3"
