@@ -60,3 +60,5 @@
 {
   /*7、 <template #footer>插槽</template> */
 }
+// 红包雨，大转盘，小程序营销组件，小程序商城常用组件
+// https://github.com/sunniejs/sol-weapp
