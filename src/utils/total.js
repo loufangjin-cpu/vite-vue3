@@ -63,4 +63,8 @@
 // 红包雨，大转盘，小程序营销组件，小程序商城常用组件
 // https://github.com/sunniejs/sol-weapp
 
-// 项目应用动画： 转盘、下雪、拍照、红包雨、发射器、点赞、 lottie-web的使用
+// 项目应用动画： 转盘、下雪、拍照、红包雨、发射器、点赞、 
+//  lottie-web的使用
+// 1、红包雨： activity/618.html#/redpack
+// 2、左右滑动手势 share/word-v1.4.html
+// 3、 抓娃娃动画 study-team.html#/
