@@ -6,6 +6,7 @@
     "build": "vite build",
     "serve": "vite preview"
   },
+  "homepage": "https://[loufangjin-cpu].github.io/vite-vue3",
   "dependencies": {
     "@sentry/tracing": "^6.2.1",
     "@sentry/vue": "^6.2.1",
