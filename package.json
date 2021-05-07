@@ -13,6 +13,7 @@
     "canvas-confetti": "^1.4.0",
     "less": "^4.1.1",
     "lib-flexible": "^0.3.2",
+    "lottie-web": "^5.7.8",
     "query-string": "^7.0.0",
     "state": "^0.2.0",
     "vant": "^3.0.7",

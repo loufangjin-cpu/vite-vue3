@@ -17,6 +17,14 @@ const routes: Array<RouteRecordRaw> = [
       keepAlive: true
     },
     component: () => import("@/views/Snow/index.vue"),
+  },{
+    path: "/provide-inject",
+    name: "ProvideInject",
+    meta: {
+      title: "雪花飘飘",
+      keepAlive: true
+    },
+    component: () => import("@/views/provide-inject/index.vue"),
   },
   {
     path: "/flying-snow",

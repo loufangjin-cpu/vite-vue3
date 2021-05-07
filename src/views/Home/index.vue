@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home-box">
     <div>count: {{ count }}</div>
     <div v-for="item in listInfo" :key="item.id">
       {{ item.name }}
@@ -13,17 +13,23 @@
     <br />
     <van-popup v-model:show="show">内容</van-popup>
     <teleport-home :isOpen="isOpen" @close-modal="closeModal" />
+    <div>
+      lottie-web
+      <rain />
+    </div>
   </div>
 </template>
 <script>
 import { computed, defineComponent, reactive, toRefs } from 'vue'
 import TeleportHome from '@/components/teleport-home.vue'
+import Rain from '@/components/rain/index.vue'
 import { useStore } from 'vuex'
 import { useRouter } from 'vue-router'
 
 export default defineComponent({
   components: {
-    TeleportHome
+    TeleportHome,
+    Rain
   },
   setup() {
     const store = useStore()
@@ -72,5 +78,9 @@ export default defineComponent({
 <style>
 .teleport-hidden {
   overflow: hidden;
+}
+.home-box {
+  background: #f4f4f4;
+  min-height: 100vh;
 }
 </style>
